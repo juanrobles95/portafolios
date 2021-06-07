@@ -49,6 +49,16 @@
   }
 }
 
+.cohete{
+  position: fixed;
+  background-image: url(/assets/img/cohete.png);
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  right: 25px;
+  bottom: 25px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -3964,6 +3974,12 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+}
+.navbar-brand h4{
+  color: var(--bs-white);
+}
+.navbar-brand h4:hover{
+  color: #ffc800;
 }
 .navbar-nav {
   display: flex;
@@ -10953,16 +10969,25 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 17.5rem;/* initial 10.5rem*/
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../assets/img/header-cb.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
+ }
+
+.cabina{
+  background-image: url("../assets/img/header-bg.jpg");
+  width: inherit;
+  height: inherit;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;  
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11274,6 +11299,8 @@ section#contact {
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
